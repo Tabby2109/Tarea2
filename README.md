@@ -494,9 +494,46 @@ El archivo principal `Tarea2-IPD441-Tabata Ahumada.ipynb` contiene todo el flujo
 # Preguntas
 
 ## ¿Cuáles fueron los parámetros seleccionados por cada modelo para ajustar y cómo afectaron la generación de la imagen?
+Los parámetros modificados en ambos modelos fueron:
+- guidance_scale, este se parámetro cuánto sigue el modelo el texto del prompt. El valor por default en el primer modelo es de 5.0 y el del segundo modelo es de 4.5. Para ambas modificaciones se utilizó este parámetro con valor 10. Al aumentar el valor las nuevas imágenes generadas se acercan ligeramente más a lo que el prompt indica.
+- num_inference_steps, determina cuantas iteraciones se siguen para la generación de la imagen. El valor por defaul en el primer modelo es de 50 y el segundo es de 100. Para ambas modificaciones se utilizó este parámetro con valor 75. El primero aumento la calidad de las imagenes generadas y del segundo disminuyo ligeramente. 
+- width, ancho de resolución de la imagen generada. El valor por defaul de ambos modelos es de 1024. Para ambas modificaciones se utilizó este parámetro con valor 1920. Al aumentar el tamaño de la imagen se ofrece una imagen más detallada, se enfoca más en detalles pequeños. 
+- height, alto de resolución de la imagen generada. El valor por defaul de ambos modelos es de 1024. Para ambas modificaciones se utilizó este parámetro con valor 1080. Al aumentar el tamaño de la imagen se ofrece una imagen más detallada, se enfoca más en detalles pequeños. 
+- sampling_method, define el algoritmo utilizado para ajustar los pasos de difusión. El valor por default en ambos modelos es de ddim que es más rápido y menos preciso. La modificación que se ejecutó en ambos modelos fue de ddim a pndm. Este último es más lento de generar la imagen pero entrega resultados más coherentes y detallados. 
 ## ¿Cuál es la arquitectura subyacente del modelo que estás utilizando?
+- El modelo Stable Diffusion XL se basa en una arquitectura de difusión latente, específicamente una Latent Diffusion Model (LDM), que combina redes neuronales convolucionales (CNNs) y transformers para generar imágenes a partir de texto. 
+- El modelo PixArt-alpha es un modelo de difusión especializado en arte visual, diseñado para capturar detalles finos y estilos artísticos complejos. Aunque se basa en principios similares a Stable Diffusion, tiene diferencias en su arquitectura para optimizar la generación de imágenes estilizadas.
 ## ¿Qué datos de entrenamiento se utilizaron para entrenar este modelo y cómo afecta esto a la diversidad de las imágenes generadas?
+Stable Diffusion XL fue entrenado utilizando conjuntos de datos derivados de LAION-5B, una colección pública de más de 5 mil millones de pares imagen-texto extraídos de la web. Mientras que PixArt-alpha fue entrenado con un conjunto de aproximadamente 25 millones de pares imagen-texto, significativamente menor que el utilizado por SDXL.
+
+Cómo afecta esto a las imagenes generadas, según note con respecto a las imagenes que se obtuvieron es que el primer modelo suele tener más contexto y entiende de mejor forma en alguna ocasiones sobre lo que se le solicita. Esto se ve reflejado principalmente en las imagenes de la frase 2, es cómo si el modelo conociera de antemano quienes eran los personajes Peete y Katniss y pudo dar con una imagen muy similar a ellos sin tener una descripción física más detallada. Situación que no sucedió con el segundo modelo. 
 ## ¿Cuáles son las limitaciones de los modelos que estás usando en términos de resolución, coherencia visual y generación realista de detalles?
+### Stable Diffusion XL 
+
+| Resolución | Coherencia Visual | Generación realiste de detalles  |
+|------------|-------------------|----------------------------------|
+| Diseñado para generar imágenes de hasta 1024 x 1024 píxeles en configuración estándar.| Puede fallar en escenarios complejos con múltiples objetos o interacciones.| Puede fallar en elementos como manos humanas, dientes o interacciones físicas complejas.|
+|Es posible aumentar la resolución, esto aumenta significativamente el uso de memoria y puede introducir artefactos o pérdida de coherencia en detalles finos.|Las relaciones espaciales entre elementos pueden ser inexactas, por ejemplo, la posición relativa de personajes o objetos puede parecer incorrecta.|Las transiciones entre áreas de alto y bajo contraste pueden ser poco naturales, creando bordes "borrosos" o inconsistentes.|
+
+### PixArt-alpha
+| Resolución | Coherencia Visual | Generación realiste de detalles  |
+|------------|-------------------|----------------------------------|
+|Tiene un límite práctico de 1024 x 1024 píxeles. | Puede resultar en escenas visualmente atractivas pero menos coherentes en términos de proporciones o perspectiva.| Aunque es muy efectivo para capturar estilos artísticos, es menos preciso para detalles anatómicos o representaciones realistas.|
+|Al ser un modelo más especializado en arte visual, puede manejar mejor detalles estilizados, pero pierde precisión en escenarios fotorealistas.|Puede presentar inconsistencias en la continuidad de elementos entre diferentes imágenes.|Los objetos complejos con múltiples partes móviles, como mecanismos o figuras humanas en movimiento, pueden aparecer deformados o abstractos.|
+
 ## ¿Cómo maneja el modelo la variabilidad en la generación de imágenes? ¿Utiliza redes neuronales convolucionales (CNNs), transformers u otra técnica para capturar patrones visuales?
+Los modelos utilizados en esta tarea, Stable Diffusion XL y PixArt-alpha, manejan la variabilidad en la generación de imágenes combinando redes convolucionales (CNNs) y transformers para capturar patrones visuales. Stable Diffusion XL utiliza un modelo de difusión latente (Latent Diffusion Model, LDM) que transforma el ruido en imágenes coherentes a través de redes UNet con capas convolucionales para detalles locales y autoatención para relaciones globales. Esto se complementa con un modelo transformer que procesa el texto del prompt para integrar información contextual. Por otro lado, PixArt-alpha se enfoca en estilos artísticos mediante redes convolucionales avanzadas y mecanismos de atención personalizados para capturar texturas detalladas y trazos estilísticos. Ambos modelos utilizan semillas aleatorias, escalas de guía y métodos de muestreo (e.g., "ddim", "pndm") para ajustar la diversidad y precisión de las imágenes generadas, permitiendo un control flexible sobre la coherencia y estilo visual.
 ## ¿Qué diferencias clave has encontrado entre los modelos de generación de imágenes que has probado en términos de calidad de salida, velocidad de generación y precisión visual?
+| | Stable Diffusion XL| PixArt-alpha|
+| --------------------- | ---------------- | ------------------ |
+| Calidad de Salida | Detalles precisos, fotorealismo, texturas finas, sensible a instrucciones ambiguas     | Enfoque artístico, trazos estilizados, destaca en imagenes abstractas o artísticas |
+| Velocidad  | Moderada en alta resolución, rápida en 1024x1024    | Rápida en estilos artísticos y texturas    |
+| Precisión Visual  | Alta coherencia en anatomía y relaciones espaciales | Mejor para estilos abstractos y artísticos |
+
 ## ¿Cómo afectan las configuraciones de parámetros (como la resolución, el tamaño de la imagen y el número de iteraciones) a la calidad final de la imagen generada por cada modelo?
+| Parámetro | Stable Diffusion XL | PixArt-alpha|
+| -----------| -----------------|--------------------- |
+| width x height | Mayor resolución aumenta el nivel de detalle pero requiere más memoria y tiempo, puede introducir artefactos | Mejor manejo de texturas estilizadas, pero con posibles distorsiones en resoluciones extremas   |
+| num_inference_steps | Más iteraciones producen imágenes más detalladas, pero con mayor tiempo de procesamiento | Similar, pero con más impacto en escenas complejas con múltiples elementos                      |
+| guidance_scale| Valores altos producen imágenes más fieles al prompt, pero pueden ser menos creativas| Controla cuánto sigue el modelo las indicaciones del prompt, crítico para precisión estilística |
+| sampling_method| `"ddim"` es más rápido pero menos preciso, `"pndm"` produce resultados más coherentes y detallados           | Similar, pero puede afectar más las transiciones suaves y texturas artísticas|

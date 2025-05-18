@@ -23,6 +23,9 @@ Evaluar y comparar el desempeño de diferentes modelos de generación de imágen
 - Imagen modelo PixArt-α  
 ![Prompt1](images/Frase_1/PixArt/imagen_1.png)
 
+Coherencia:
+El primer modelo presenta una imagen coherente con lo solicitado mayormente ya que falta el jinete. Mientras que el segundo modelo no arroja una imagen relacionada, se solicita un dragón y muestra un águila.
+
 ---
 
 #### Prompt y Antiprompt 2
@@ -34,6 +37,9 @@ Evaluar y comparar el desempeño de diferentes modelos de generación de imágen
 
 - Imagen modelo PixArt-α  
 ![Prompt2](images/Frase_1/PixArt/imagen_2.png)
+
+Coherencia:
+El primer modelo no arroja una imagen muy relacionada, ya que no muestra al dragón ni el campo de batalla con jinetes muertos pero si la nube gris en el cielo. Mientras que el segundo modelo tampoco muestra lo solicitado pero si da a entender que se pudo estar en un campo de batalla y aparece un jinete, solo que de caballo y no de dragón. 
 
 ---
 
@@ -47,6 +53,9 @@ Evaluar y comparar el desempeño de diferentes modelos de generación de imágen
 - Imagen modelo PixArt-α  
 ![Prompt3](images/Frase_1/PixArt/imagen_3.png)
 
+Coherencia:
+El primer modelo muestra una imagen cero relacionada, exceptuando por la niebla en el campo de batalla. Mientras que el segundo modelo muestra algo más cercano a lo solicitado, exceptuando porque muestra un caballo y no un dragón.
+
 ---
 
 #### Prompt y Antiprompt 4
@@ -58,6 +67,9 @@ Evaluar y comparar el desempeño de diferentes modelos de generación de imágen
 
 - Imagen modelo PixArt-α  
 ![Prompt4](images/Frase_1/PixArt/imagen_4.png)
+
+Coherencia:
+El primer modelo muestra gran parte de lo solicitado, muestra al dragón solo en un valle pero falta la parte del jinete cayendo. El segundo modelo, muestra lo que debería evitar, es decir, un dragón felino. 
 
 ---
 
@@ -71,6 +83,9 @@ Evaluar y comparar el desempeño de diferentes modelos de generación de imágen
 - Imagen modelo PixArt-α  
 ![Prompt5](images/Frase_1/PixArt/imagen_5.png)
 
+Coherencia: 
+El primer modelo muestra una imagen relacionada a lo solicitado y a lo que se debe evitar, solo no muestra al jinete a lo lejos. El segundo modelo muestra algo relacionado al poner al jinete pero lo hace en primer plano y no hay muestra del dragón. 
+
 ---
 
 #### Prompt y Antiprompt 6
@@ -82,6 +97,9 @@ Evaluar y comparar el desempeño de diferentes modelos de generación de imágen
 
 - Imagen modelo PixArt-α  
 ![Prompt6](images/Frase_1/PixArt/imagen_6.png)
+
+Coherencia: 
+El primer modelo muestra el jardín tal cómo se solicita pero no muestra nada más del prompt, con el segundo modelo pasa exactamente lo mismo.
 
 ---
 
@@ -95,6 +113,9 @@ Evaluar y comparar el desempeño de diferentes modelos de generación de imágen
 - Imagen modelo PixArt-α  
 ![Prompt7](images/Frase_1/PixArt/imagen_7.png)
 
+Coherencia:
+Al igual que con el prompt anterior, el primer modelo muestra solo el campo pero nada más, a diferencia del segundo que muestra de forma precisa lo que fue solicitado. 
+
 ---
 
 #### Prompt y Antiprompt 8
@@ -106,6 +127,9 @@ Evaluar y comparar el desempeño de diferentes modelos de generación de imágen
 
 - Imagen modelo PixArt-α  
 ![Prompt8](images/Frase_1/PixArt/imagen_8.png)
+
+Coherencia: 
+La imagen del primer modelo, es casi igual a lo solicitado, mientras que el segundo ni similar al prompt. 
 
 ---
 
@@ -119,6 +143,9 @@ Evaluar y comparar el desempeño de diferentes modelos de generación de imágen
 - Imagen modelo PixArt-α  
 ![Prompt9](images/Frase_1/PixArt/imagen_9.png)
 
+Coherencia: 
+El primer modelo muestra una imagen que no se ajusta a lo solicitado, mientras que el segundo muestra una llama que es lo único que ilumina la imagen pero no del dragón y el jinete.  
+
 ---
 
 #### Prompt y Antiprompt 10
@@ -131,6 +158,9 @@ Evaluar y comparar el desempeño de diferentes modelos de generación de imágen
 - Imagen modelo PixArt-α  
 ![Prompt10](images/Frase_1/PixArt/imagen_10.png)
 
+Coherencia:
+Ambos modelos muestran una imagen muy parecida a lo que se solicita aunque no sigue muy bien las instrucciones de lo que se debe evitar en el primero.
+
 ### Frase 2: Hasta el día de hoy, no he sido capaz de romper la conexión entre este chico, Peeta Mellark, el pan que me dio esperanza y el diente de león que me recordó que no estaba condenada
 
 #### Prompt y Antiprompt 1
@@ -142,6 +172,9 @@ Evaluar y comparar el desempeño de diferentes modelos de generación de imágen
 
 - Imagen modelo PixArt-α  
 ![Prompt1](images/Frase_2/PixArt/imagen_1.png)
+
+Coherencia: 
+En ambas imagenes se muestra gran parte de lo solicitado, faltan detalles clave cómo el pan y el diente de león.
 
 ---
 
@@ -156,6 +189,9 @@ Evaluar y comparar el desempeño de diferentes modelos de generación de imágen
 - Imagen modelo PixArt-α  
 ![Prompt2](images/Frase_2/PixArt/imagen_2.png)
 
+Coherencia: 
+En ambas imagenes se muestra gran parte de lo solicitado, faltan detalles clave el muro en la parte trasera de la imagen.
+
 ---
 
 #### Prompt y Antiprompt 3
@@ -167,6 +203,9 @@ Evaluar y comparar el desempeño de diferentes modelos de generación de imágen
 
 - Imagen modelo PixArt-α  
 ![Prompt3](images/Frase_2/PixArt/imagen_3.png)
+
+Coherencia:
+El primer modelo muestra una imagen más cercana a lo que solicita pero faltan objetos importante como el pan. Mientras que el segundo también muestra lo principal, pero muestra un león, no la flor diente de león.
 
 ---
 
@@ -181,18 +220,23 @@ Evaluar y comparar el desempeño de diferentes modelos de generación de imágen
 - Imagen modelo PixArt-α  
 ![Prompt4](images/Frase_2/PixArt/imagen_4.png)
 
+Coherencia: 
+En ambas imagenes se muestra lo mismo solo de forma ligeramente diferente. En ambas faltan los mismos elementos, es decir, el pan y el diente de león. 
+
 ---
 
 #### Prompt y Antiprompt 5
 - Prompt: Una escena nocturna en un bosque, donde una figura femenina, con el cabello suelto y la ropa rasgada, se sienta en un tronco caído, rodeada de flores silvestres y hojas secas, con un diente de león en la mano y un panadero en el suelo a su lado, con un pan en la mesa entre ellos, iluminada por la luna llena.
 - Antiprompt: Evita la representación de una escena romántica o sensual, no incluyas figuras adicionales, no uses colores vibrantes ni efectos de iluminación exagerados, no muestra la cara de la figura femenina, no incluyas objetos innecesarios en la escena, no crea una sensación de drama o tensión.
 
-
 - Imagen modelo Stable Diffusion XL  
 ![Prompt5](images/Frase_2/Stabilityai/imagen_5.png)
 
 - Imagen modelo PixArt-α  
 ![Prompt5](images/Frase_2/PixArt/imagen_5.png)
+
+Coherencia:
+Ningun modelo muestra lo que se solicita, solo se muestra a la chica pero no todo el resto de elementos que le dan coherencia a lo solicitado.
 
 ---
 
@@ -207,6 +251,9 @@ Evaluar y comparar el desempeño de diferentes modelos de generación de imágen
 - Imagen modelo PixArt-α  
 ![Prompt6](images/Frase_2/PixArt/imagen_6.png)
 
+Coherencia:
+El primer modelo muestra parte de lo solicitado, que es la chica con la escena en blanco y negro pero nada más faltan elementos como el pan, otros alimentos entre otros. La segunda imagen muestra algo más cercano a lo solicitado pero en vez de la flor diente de león muestra a un león. 
+
 ---
 
 #### Prompt y Antiprompt 7
@@ -218,6 +265,9 @@ Evaluar y comparar el desempeño de diferentes modelos de generación de imágen
 
 - Imagen modelo PixArt-α  
 ![Prompt7](images/Frase_2/PixArt/imagen_7.png)
+
+Coherencia:
+El primer modelo parece tener más un contexto sobre quien es el personje que se solicita ya que las caracteristicas del personaje que se muestra es muy similar a la persona de la que se habla, pero hablando de otros elementos falta todo menos Katniss. El segundo modelo pareciera no tener la misma información ya que muestra a una persona no parecida a Katniss y el resto del prompt tampoco está presente. 
 
 ---
 
@@ -233,12 +283,14 @@ Evaluar y comparar el desempeño de diferentes modelos de generación de imágen
 - Imagen modelo PixArt-α  
 ![Prompt8](images/Frase_2/PixArt/imagen_8.png)
 
+Coherencia: 
+Ambas imagenes muestran lo mismo y siguen gran parte del prompt menos la sección de la ciudad en ruinas, muestran algo ídilico mientras que debiese ser algo distópico.
+
 ---
 
 #### Prompt y Antiprompt 9
 - Prompt: Una escena nocturna en un campo de ruinas, con Peeta Mellark sentado en un tronco de árbol, rodeado de panes y frutas, con un diente de león en su mano derecha, y Katniss Everdeen de pie detrás de él, con una mirada nostálgica y una expresión de melancolía.
 - Antiprompt: Evita imágenes con colores vivos y brillantes, no incluyas a otros personajes del libro comoDistrict 12 o el Capitolio, no representes la conexión entre Peeta y Katniss de manera explícita o romántica, y no incluyas elementos que sugieran violencia o peligro.
-
 
 - Imagen modelo Stable Diffusion XL  
 ![Prompt9](images/Frase_2/Stabilityai/imagen_9.png)
@@ -246,18 +298,23 @@ Evaluar y comparar el desempeño de diferentes modelos de generación de imágen
 - Imagen modelo PixArt-α  
 ![Prompt9](images/Frase_2/PixArt/imagen_9.png)
 
+Coherencia:
+El primer modelo muestra tal cual lo que se solicita y da las vibras de ser una escena perfecta. Mientras que la segunda falta el detalle de que uno de los personajes no está. 
+
 ---
 
 #### Prompt y Antiprompt 10
 - Prompt: Una joven, Katniss Everdeen, sentada en una roca, con un pan y un diente de león a su lado, mirando hacia el horizonte con un semblante pensativo, evocando la nostalgia y la reflexión sobre su pasado.
 - Antiprompt: No generar imágenes de Katniss con expresiones agresivas o violentas, no incluir elementos que sugieran una conexión romántica con Peeta, no representar a Katniss con armas o vestimenta de combate, no mostrar la escena en un entorno urbano o industrial.
 
-
 - Imagen modelo Stable Diffusion XL  
 ![Prompt10](images/Frase_2/Stabilityai/imagen_10.png)
 
 - Imagen modelo PixArt-α  
 ![Prompt10](images/Frase_2/PixArt/imagen_10.png)
+
+Coherencia: 
+En la primera imagen se muestra más cercano a lo que se solicita ya que la imagen si da un aire melancólico pero faltan elementos de lo solicitado. El segundo no da el mismo aire, si no uno más vivaz pero muestra un león y no un diente de león. 
 
 ### Frase 3: Cuando se juega al juego de tronos, solo se puede ganar o morir. No hay puntos intermedios.
 
@@ -271,6 +328,7 @@ Evaluar y comparar el desempeño de diferentes modelos de generación de imágen
 
 - Imagen modelo PixArt-α  
 ![Prompt1](images/Frase_3/PixArt/imagen_1.png)
+
 
 
 ---

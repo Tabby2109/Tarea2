@@ -6,7 +6,7 @@ Evaluar y comparar el desempeño de diferentes modelos de generación de imágen
 # Frases a usar 
 
 - `Un dragón sin su jinete es una tragedia. Un jinete sin su dragón está muerto.` - Alas de Sangre, Rebecca Yarros.
-- `Hasta el día de hoy, no he sido capaz de romper la conexión entre este chico, Peeta Mellark, el pan que me dio esperanza y el diente de león que me recordó que no estaba condenada` - Los Juegos del Hamnre - Suzanne Collins.
+- `Hasta el día de hoy, no he sido capaz de romper la conexión entre este chico, Peeta Mellark, el pan que me dio esperanza y el diente de león que me recordó que no estaba condenada` - Los Juegos del Hambre - Suzanne Collins.
 - `Cuando se juega al juego de trono, solo se puede ganar o morir. No hay puntos intermedios.` - Juego de Tronos 1: Canción de Hielo y Fuego - George R.R Martin.
 
 ## Prompts Generados con su Antiprompt + Imágenes Generadas
@@ -329,7 +329,8 @@ En la primera imagen se muestra más cercano a lo que se solicita ya que la imag
 - Imagen modelo PixArt-α  
 ![Prompt1](images/Frase_3/PixArt/imagen_1.png)
 
-
+Coherencia: 
+Ambos modelos arrojan imágenes que cumplen en general con el prompt y siguien las instrucciones de qué cosas deben evitar. Eso si, la primnera imagen tiene más relación a la época medieval que la segunda lo que la hace ligeramente más correcta.
 
 ---
 
@@ -343,6 +344,9 @@ En la primera imagen se muestra más cercano a lo que se solicita ya que la imag
 - Imagen modelo PixArt-α  
 ![Prompt2](images/Frase_3/PixArt/imagen_2.png)
 
+Coherencia:
+El primer modelo tiene características más precisas de lo solicitado,falta la mesa pero en todo lo demás está correcto. El segundo tiene la mesa y las personas pero falta el trono y lo que eso significa.
+
 ---
 
 #### Prompt y Antiprompt 3
@@ -355,6 +359,9 @@ En la primera imagen se muestra más cercano a lo que se solicita ya que la imag
 - Imagen modelo PixArt-α  
 ![Prompt3](images/Frase_3/PixArt/imagen_3.png)
 
+Coherencia:
+En ambos modelos faltan elementos clave de lo solicitado, por ejemplo la ciudad en ruinas o los ejercitos. Pero cumplen con una parte, el segundo es más cercano a lo solicitado que el primero. 
+
 ---
 
 #### Prompt y Antiprompt 4
@@ -366,6 +373,9 @@ En la primera imagen se muestra más cercano a lo que se solicita ya que la imag
 
 - Imagen modelo PixArt-α  
 ![Prompt4](images/Frase_3/PixArt/imagen_4.png)
+
+Coherencia: 
+Ambos modelos muestran la misma imagen con la misma falta de elementos claves cómo el reino en llamas o los cadáveres,
 
 ---
 
@@ -380,6 +390,9 @@ En la primera imagen se muestra más cercano a lo que se solicita ya que la imag
 - Imagen modelo PixArt-α  
 ![Prompt5](images/Frase_3/PixArt/imagen_5.png)
 
+Coherencia: 
+La primera imagen tiene cero relación a lo solicitado, mientras que la segunda cumple gran parte del prompt. Cabe mencionar que este promnpt igual no tiene mucha relación al significado o contexto de la frase original. 
+
 ---
 
 #### Prompt y Antiprompt 6
@@ -391,6 +404,9 @@ En la primera imagen se muestra más cercano a lo que se solicita ya que la imag
 
 - Imagen modelo PixArt-α  
 ![Prompt6](images/Frase_3/PixArt/imagen_6.png)
+
+Coherencia: 
+Ambos modelos muestran la misma imagen con la misma falta de elementos claves cómo los cadáveres.
 
 ---
 
@@ -406,6 +422,8 @@ En la primera imagen se muestra más cercano a lo que se solicita ya que la imag
 - Imagen modelo PixArt-α  
 ![Prompt7](images/Frase_3/PixArt/imagen_7.png)
 
+Coherencia:
+La primera imagen tiene poca o nulo sentido, ponen dragones humanizados jugando ajedrez que no fue precisamente lo que se solicito, por otro lado el segundo modelo generó imágenes más relacionadas a lo solicitado, el juego y las personas entablandose en casi un juego mortal.
 
 ---
 
@@ -419,6 +437,9 @@ En la primera imagen se muestra más cercano a lo que se solicita ya que la imag
 - Imagen modelo PixArt-α  
 ![Prompt8](images/Frase_3/PixArt/imagen_8.png)
 
+Coherencia: 
+Ambos modelos muestran la misma imagen con la misma falta de elementos claves cómo la ciudad en ruinas.
+
 ---
 
 #### Prompt y Antiprompt 9
@@ -431,12 +452,14 @@ En la primera imagen se muestra más cercano a lo que se solicita ya que la imag
 - Imagen modelo PixArt-α  
 ![Prompt9](images/Frase_3/PixArt/imagen_9.png)
 
+Coherencia:
+Ninguna de las dos imágenes plasman lo que se busca, el prompt parte con el juego destriudo pero ninguna imagen muestra eso. La coherencia entre lo solicitado y lo entregado en ambos casos es muy baja. 
+
 ---
 
 #### Prompt y Antiprompt 10
 - Prompt: "Un jugador solitario se sienta en un trono de piedra, rodeado de sombras y velas que iluminan la habitación. Su mirada está fija en el tablero de juego, donde las piezas de madera están dispuestas en una configuración letal. La cuestión es: ¿quién saldrá vivo de esta partida?"
 - Antiprompt: "Evita generar una imagen que sea demasiado colorida o alegre, no hay espacio para la esperanza en este juego. No incluyas elementos como flores, arcoíris o personas felices en la escena. Enfócate en la tensión y la dramática, y asegúrate de que el jugador esté rodeado de sombras y oscuridad."
-
 
 - Imagen modelo Stable Diffusion XL  
 ![Prompt10](images/Frase_3/Stabilityai/imagen_10.png)
@@ -444,7 +467,12 @@ En la primera imagen se muestra más cercano a lo que se solicita ya que la imag
 - Imagen modelo PixArt-α  
 ![Prompt10](images/Frase_3/PixArt/imagen_10.png)
 
+Coherencia: 
+Ambas imagenes se acercan mucho a los solicitado. Incluyen los elementos como el jugador solitario, el trono, las sombras y velas que iluminan la habitación. Coherencia alta.
+
 # Estructura del código
+
+El archivo principal `Tarea2-IPD441-Tabata Ahumada.ipynb` contiene todo el flujo de procesamiento, incluyendo:
 
 - Se conecta al token de Hugging Face
 - Se descarga una carpeta con tipografía para poder poner la frase en la imagen considerando actuación.
